@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KendokyotoApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+
+  <body>
+     <header>
+       <div class="header-logo">
+        <%= link_to("KENDO", "") %>
+      </div>
+       <ul class="header-menus">
+      <li>
+      <%= link_to("Our class", "/class") %>
+    </li>
+    <li>
+      <%= link_to("Book now", "/book") %>
+    </li>
+    <li>
+      <%= link_to("login", "/login") %>
+    </li>
+  </ul>
+</header>
+    <%= yield %>
+  </body>
+</html>
